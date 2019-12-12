@@ -5,6 +5,7 @@ class SecretsController < ApplicationController
   def show
     # redirect to /login if not logged in
     # should show secret if logged in
+
   end
 
 end
