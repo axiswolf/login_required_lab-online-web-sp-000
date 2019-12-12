@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     else
     # sets session[:name] if :name is given
       session[:name] = params[:name]
-      
+
     end
   end
 
