@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
       redirect_to '/login'
     else
     # sets session[:name] if :name is given
+    session[:name]
     end
   end
 
