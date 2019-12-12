@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       redirect_to '/login'
     else
     # sets session[:name] if :name is given
-    session[:name] = params[:name]
+      current_user = params[:name]
     end
   end
 
