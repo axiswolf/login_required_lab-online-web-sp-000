@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   def show
 
   end
-  
+
   def create
     if current_user.nil? || current_user.empty?
     # redirects to login page if :name is nil
