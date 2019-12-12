@@ -12,7 +12,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    if current_user.nil?
+    if params[:name].nil?
+      session[:name]
+    else
       session.destroy :name
     end
   end
