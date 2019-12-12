@@ -12,10 +12,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    if params[:name].nil?
-      session[:name]
-    else
+    if current_user.nil?
       session.destroy :name
+      redirect_to root_path
     end
   end
 
