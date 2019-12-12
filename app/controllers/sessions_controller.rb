@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     # redirects to login page if :name is nil
     # redirects to login page if :name is empty
     # sets session[:name] if :name is given
-    
+
   end
 
   def destroy
@@ -14,5 +14,5 @@ class SessionsController < ApplicationController
       session.destroy :name
     end
   end
-  
+
 end
