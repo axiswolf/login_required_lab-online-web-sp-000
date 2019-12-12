@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     # redirects to login page if :name is nil
     # redirects to login page if :name is empty
       redirect_to '/login'
-    else 
+    else
     # sets session[:name] if :name is given
     end
   end
